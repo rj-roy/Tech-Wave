@@ -1,8 +1,16 @@
+html{
+    background-color: #1a0c30;
+}
+
 body {
     color: #ffff;
     max-width: 1600px;
     margin: 0 auto;
-    background-color: black;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
 }
 
 .header {
@@ -11,11 +19,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 100px;
-}
-
-.l-text a{
-    text-decoration: none;
-    color: #fff;
+    border-bottom: 1px solid #3f2c5e;
 }
 
 .l-text span {
@@ -24,15 +28,11 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-.main-menu a {
-    text-decoration: none;
-    color: #fff;
-}
-
 .main-menu a:hover {
     background: linear-gradient(45deg, #F7E93F, #FB09B4, #9100F8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    transition-duration: 500ms;    
 }
 
 .main-menu li {
@@ -52,6 +52,10 @@ body {
     animation: menuButton 5s ease infinite;
     transition: transform 0.3s ease;
     background-size: 200% 300%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 }
 
 .menu-button button:hover {
@@ -72,7 +76,85 @@ body {
     }
 }
 
-.menu-button a {
-    text-decoration: none;
-    color: #ffffff;
+.hero-sec{
+    background-image: url(assets/hero-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 760px;
+    text-align: center;
+}
+
+.h-top{
+    text-align: center;
+    background-image: url(assets/hero-circle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+    position: relative;
+    /* margin-top: -90px; */
+}
+
+.h-top img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.h-top sup{
+    color: #000;
+    position: absolute;
+    background-color: #00FF88;
+    padding: 8px;
+    text-align: center;
+    border-radius: 999px;
+    top: 5%;
+    left: 70%;
+}
+
+.h-text h2{
+    font-size: 60px;
+    font-weight: bolder;
+    margin-bottom: 0px;
+}
+
+.h-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.h-buttons button:first-of-type {
+    background: linear-gradient(45deg, #F7E93F, #FB09B4, #9100F8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    gap: 10px;
+    border-radius: 999px;
+    background-size: 200% 200%;
+    transition: background-position 0.9s ease-in-out;
+}
+
+.listen:hover{
+    background-position: 100% 50%;    
+}
+
+.h-buttons button:last-of-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 2px solid #00FF88;
+    border-radius: 999px;
+    gap: 10px;
+    padding: 12px 20px;
 }
