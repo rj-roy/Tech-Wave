@@ -99,6 +99,8 @@ h3 {
     }
 }
 
+
+
 .hero-sec {
     background-image: url(assets/hero-bg.png);
     background-size: cover;
@@ -276,7 +278,7 @@ h3 {
 }
 
 .featured-top{
-    width: 1600px;
+    max-width: 1600px;
 }
 
 .featured-cap{
@@ -382,4 +384,224 @@ footer{
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+
+
+@media (max-width: 576px) {
+  .header {
+    padding: 10px;
+  }
+
+  .main-menu,
+  .menu-button {
+    display: none;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .hero-sec {
+    padding: 0 20px;
+  }
+
+  .h-top {
+    width: 250px;
+    height: 250px;
+    background-size: contain;
+  }
+
+  .h-text h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .h-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  
+
+  .h-buttons button {
+    justify-content: center;
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .about {
+    padding: 50px 20px;
+    margin-bottom: 80px;
+  }
+
+  .rankings {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+  }
+
+  .rank-value {
+    font-size: 32px;
+  }
+
+  .why-choose {
+    padding: 60px 20px;
+  }
+
+  .why-choose h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 0 10px;
+  }
+
+  .f-card {
+    padding: 25px;
+    border-radius: 20px;
+  }
+
+  .featured {
+    padding: 60px 20px;
+  }
+
+  .featured-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .featured-card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .featured-card iframe {
+    height: 200px;
+  }
+
+  .host {
+    flex-direction: column;
+    height: auto;
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 400px;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .host-text h4 {
+    font-size: 24px;
+  }
+
+  .host-text i {
+    justify-content: center;
+  }
+
+  footer {
+    padding: 40px 20px;
+  }
+
+  .ft-icon h1 {
+    font-size: 50px;
+  }
+
+  .footer-icon i {
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+}
+
+
+@media (min-width: 577px) and (max-width: 992px) {
+  .header {
+    padding: 0 40px;
+  }
+
+  .main-menu,
+  .menu-button {
+    display: none;
+  }
+
+  h2 {
+    font-size: 44px;
+  }
+
+  .hero-sec {
+    min-height: 650px;
+  }
+
+  .h-top {
+    width: 300px;
+    height: 300px;
+  }
+
+  .h-text h2 {
+    font-size: 50px;
+  }
+
+  .h-buttons {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .rankings {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .rank-value {
+    font-size: 40px;
+  }
+
+  .why-choose {
+    padding: 80px 40px;
+  }
+
+  .features {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .featured-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .featured-card {
+    max-width: 300px;
+  }
+
+  .host {
+    flex-direction: row;
+    max-width: 800px;
+    height: 240px;
+    padding: 0 30px;
+    text-align: left;
+    gap: 30px;
+  }
+
+  .host-text h4 {
+    font-size: 28px;
+  }
+
+  .ft-icon h1 {
+    font-size: 60px;
+  }
+}
+
+@media (min-width:993px){
+    .hamburger-menu{
+        display: none;
+    }
 }
