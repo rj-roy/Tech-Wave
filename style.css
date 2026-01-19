@@ -16,6 +16,7 @@ a {
 p {
     font-size: 16px;
     margin: 5px 0;
+    color: #a89eb4;
 }
 
 
@@ -218,7 +219,8 @@ h3 {
 
 .why-choose {
     background-color: #230E3D;
-    padding: 120px 0px;
+    padding: 120px 100px;
+    /* display: none; */
 }
 
 .why-choose h2 {
@@ -267,4 +269,118 @@ h3 {
 .layout-4{
     grid-column: span 1;
     grid-row: span 1;
+}
+
+.featured{
+    background-color: #1A0B2E;
+    padding: 120px 10px;
+}
+
+.featured-top{
+    width: 1600px;
+}
+
+.featured-cap{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.featured-cards{
+    display: flex;
+    gap: 20px;
+    padding: 0 10px;
+    justify-content: center;
+}
+
+.featured-card{
+    background-color: #250d44;
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+}
+
+.featured-card iframe{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 215px;
+}
+
+.fe-text{
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 12px;
+}
+
+.fe-text span{
+    display: flex;
+    gap: 6px;
+}
+
+.featured-bottom{
+    padding: 120px 10px 0 10px;
+}
+
+.b-cap h2{
+    text-align: center;
+}
+
+.host{
+    height: 280px;
+    background-color: #250d44;
+    border-radius: 30px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin: 40px auto;
+    padding: 0 40px;
+
+}
+
+.host-text h4{
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.host-text i{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.ft-icon h1{
+    font-size: 70px;
+    text-align: center;
+    margin: 0 0 0 0;
+}
+
+footer{
+    background-image: url(assets/footer-bg.png);
+    background-size: cover;
+    text-align: center;
+    padding: 50px 0;
+    background-position: center;
+    gap: 40px;
+}
+
+.ft{
+    display: grid;
+    padding: 40px 0;
+}
+
+.footer-icon i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.footer-icon i a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
